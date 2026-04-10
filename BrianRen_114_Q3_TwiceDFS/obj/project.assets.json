@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/renyouchen/RiderProjects/ConsoleApp1/BrianRen_114_Q3_DAG/BrianRen_114_Q3_DAG.csproj",
-      "projectName": "BrianRen_114_Q3_DAG",
-      "projectPath": "/Users/renyouchen/RiderProjects/ConsoleApp1/BrianRen_114_Q3_DAG/BrianRen_114_Q3_DAG.csproj",
+      "projectUniqueName": "/Users/renyouchen/RiderProjects/ConsoleApp1/BrianRen_114_Q3_TwiceDFS/BrianRen_114_Q3_TwiceDFS.csproj",
+      "projectName": "BrianRen_114_Q3_TwiceDFS",
+      "projectPath": "/Users/renyouchen/RiderProjects/ConsoleApp1/BrianRen_114_Q3_TwiceDFS/BrianRen_114_Q3_TwiceDFS.csproj",
       "packagesPath": "/Users/renyouchen/.nuget/packages/",
-      "outputPath": "/Users/renyouchen/RiderProjects/ConsoleApp1/BrianRen_114_Q3_DAG/obj/",
+      "outputPath": "/Users/renyouchen/RiderProjects/ConsoleApp1/BrianRen_114_Q3_TwiceDFS/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/renyouchen/.nuget/NuGet/NuGet.Config"

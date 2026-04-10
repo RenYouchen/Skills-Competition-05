@@ -5,6 +5,7 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>BrianRen_114_Q3_DAG</RootNamespace>
     </PropertyGroup>
 
 </Project>
