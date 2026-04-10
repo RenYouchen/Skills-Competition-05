@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrianRen_114_Q3_BFS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0de5f6dcbebec542659095bd73e9bdb9f4860464")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+565ec80616fbc32fec77f2d940b5743b58cb6b9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrianRen_114_Q3_BFS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrianRen_114_Q3_BFS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
