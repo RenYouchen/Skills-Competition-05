@@ -24,19 +24,45 @@ Box Fusion(List<Box> boxes)
 }
 
 
+//（Intersection over Union, IoU）
+//甲、IoU = 交集面積 / 聯集面積。
+//乙、交集面積：計算兩個框重疊矩形的面積，若無重疊則為 0
+//丙、聯集面積：兩個框面積之和減去交集面積。
+//https://web.ntnu.edu.tw/~algo/Shape.html ntnu shape
+float GetIoU(Box a, Box b)
+{
+    float Intersection;
+    float Union;
+    //交集
+    float x1 = Math.Max(a.x1, b.x1);
+    float y1 = Math.Max(a.y1, b.y1);
+    float x2 = Math.Min(a.x2, b.x2);
+    float y2 = Math.Min(a.y2, b.y2);
+
+    float w = x2 - x1;
+    float h = y2 - y1;
+    Intersection = w * h;
+        
+    //聯集
+    Union = (a.x2 - a.x1) * (a.y2 - a.y1) +
+        (b.x2 - b.x1) * (b.y2 - b.y1) - Intersection;
+
+    float calcIoU = Intersection / Union;
+    return calcIoU;
+}
 
 Console.Write("請輸入IoU閾值(0, 1]，例如 0.5 或 0.8（輸入無效值將使用預設值0.5）：");
 if (!float.TryParse(Console.ReadLine(), out IoU))
 {
-    Console.WriteLine("使用預設值0.5");
+    Console.WriteLine("使用預設值0.50");
     IoU = 0.5f;
 } 
 else if (IoU > 1 || IoU <= 0)
 {
-    Console.WriteLine("使用預設值0.5");
+    Console.WriteLine("使用預設值0.50");
     IoU = 0.5f;
 }
-Console.WriteLine($"IoU閾值：{IoU}");
+Console.WriteLine($"IoU閾值：{IoU:F2}");
 
 List<Box> boxes = new List<Box>();
 
@@ -57,71 +83,55 @@ catch (Exception e)
     Console.WriteLine(e.ToString());
 }
 
-foreach (var i in boxes)
-{
-    Console.WriteLine(i);
-}
-
-//（Intersection over Union, IoU）
-//甲、IoU = 交集面積 / 聯集面積。
-//乙、交集面積：計算兩個框重疊矩形的面積，若無重疊則為 0
-//丙、聯集面積：兩個框面積之和減去交集面積。
-//https://web.ntnu.edu.tw/~algo/Shape.html ntnu shape
-
-List<(float, int, int)> calcIoUList = new List<(float, int, int)>();
 List<Box> ans = new List<Box>();
-List<bool> visited = Enumerable.Repeat(false, boxes.Count).ToList();
-List<Box> fusion = new List<Box>();
-for (int i = 0; i < boxes.Count; i++)
+List<List<Box>> clusters = new List<List<Box>>();
+
+foreach (var box in boxes)
 {
-    for (int j = i+1; j < boxes.Count; j++)
+    bool match = false;
+    foreach (var cluster in clusters)
     {
-        Box a = boxes[i];
-        Box b = boxes[j];
-        float Intersection;
-        float Union;
-        //交集
-        float x1 = Math.Max(a.x1, b.x1);
-        float y1 = Math.Max(a.y1, b.y1);
-        float x2 = Math.Min(a.x2, b.x2);
-        float y2 = Math.Min(a.y2, b.y2);
-
-        float w = x2 - x1;
-        float h = y2 - y1;
-        Intersection = w * h;
-        
-        //聯集
-        Union = (a.x2 - a.x1) * (a.y2 - a.y1) +
-                (b.x2 - b.x1) * (b.y2 - b.y1) - Intersection;
-
-        float calcIoU = Intersection / Union;
-        calcIoUList.Add((calcIoU, i, j));
+        if (GetIoU(box, cluster[0]) > IoU)
+        {
+            cluster.Add(box);
+            match = true;
+            break;
+        }
+    }
+    if (!match)
+    {
+        clusters.Add(new List<Box> { box });
     }
 }
 
-foreach (var c in calcIoUList)
+foreach (var i in clusters)
 {
-    
-    Console.WriteLine(c);
-    fusion.Add(boxes[c.Item2]);
-    fusion.Add(boxes[c.Item3]);
-    visited[c.Item2] = true;
-    visited[c.Item3] = true;
+    ans.Add(Fusion(i));
 }
 
+Console.WriteLine($"融合後的框數量：{ans.Count}");
+for (int i = 0; i < ans.Count; i++)
+{
+    Console.WriteLine($"框{i+1}：{ans[i]}");
+}
 
+using (StreamWriter sw = new StreamWriter("../../../fused_boxes.txt"))
+{
+    sw.WriteLine($"""
+                 IoU Threshold: {IoU:F2}
+                 Number of Fused Boxes: {ans.Count}
+                 x1 y1 x2 y2 score weight
+                 """);
+    foreach (var i in ans)
+    {
+        sw.WriteLine($"{i.x1:F2} {i.y1:F2} {i.x2:F2} {i.y2:F2} {i.score:F2} {i.weight:F2} ");
+    }
+}
 
 //0.82232344 (0,1)
 //0.6806723 (0,2)
 //0.82232344 (1,2)
 //>=0.8 -> (0,1) (2)
-
-
-
-foreach (var b in ans)
-{
-    Console.WriteLine(b);
-}
 
 class Box
 {
@@ -142,6 +152,6 @@ class Box
     public float weight { get; set; }
     public override string ToString()
     {
-        return $"{x1:F2} {y1:F2} {x2:F2} {y2:F2} {score:F2} {weight:F2}";
+        return $"x1={x1:F2}，y1={y1:F2}，x2={x2:F2}，y2={y2:F2}，score={score:F2}，weight={weight:F2}";
     }
 }
