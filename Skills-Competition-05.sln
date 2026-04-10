@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q3_TwiceDFS", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q5", "BrianRen_114_Q5\BrianRen_114_Q5.csproj", "{420C4DBE-81C3-4C80-BBD0-BDC7988AFD86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q6", "BrianRen_114_Q6\BrianRen_114_Q6.csproj", "{C2F5DC67-4AE6-4121-8829-D0C11F3BF0B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{420C4DBE-81C3-4C80-BBD0-BDC7988AFD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{420C4DBE-81C3-4C80-BBD0-BDC7988AFD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{420C4DBE-81C3-4C80-BBD0-BDC7988AFD86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F5DC67-4AE6-4121-8829-D0C11F3BF0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F5DC67-4AE6-4121-8829-D0C11F3BF0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F5DC67-4AE6-4121-8829-D0C11F3BF0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F5DC67-4AE6-4121-8829-D0C11F3BF0B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
