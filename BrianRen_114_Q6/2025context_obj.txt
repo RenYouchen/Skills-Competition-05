@@ -1,9 +1,9 @@
- 21     Ball  Aluminum          3         0
+ 21     Bal1  Aluminum          3         0
   2     Ball      Iron          2         0
   3     Ball      Lead          5         2
  16 Cylinder      Iron          3         6
  43 Cylinder      Lead          3         7
- 19 Cylinder  Aluminum          4         6
+ 19 Cylinder  Aluminin          4         6
  45 Cylinder      Iron          4         7
   7  Pyramid      Lead          4         8
  26 Cylinder  Aluminum         -5         5
