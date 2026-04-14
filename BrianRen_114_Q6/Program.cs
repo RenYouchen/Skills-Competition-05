@@ -13,22 +13,34 @@ try
         string s;
         while ((s = sr.ReadLine()) != null)
         {
-            // List<>
+            var sl = s.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            objs.Add(new Object(int.Parse(sl[0]), sl[1], sl[2], float.Parse(sl[3]),
+                float.Parse(sl[4])));
+            //parse _objType to int
         }
-        
-    }
-} catch(Exception e) {}
 
-class Object(int _id, int _objType, int _maType, float _para1, float _para2)
+    }
+}
+catch (Exception e)
+{
+    Console.WriteLine(e);
+}
+
+foreach (var i in objs)
+{
+    Console.WriteLine(i);
+}
+
+class Object(int _id, string _objType, string _maType, float _para1, float _para2)
 {
     public int id = _id;
-    public int objType = _objType;
-    public int maType = _maType;
+    public string objType = _objType;
+    public string maType = _maType;
     public float para1 = _para1;
     public float para2 = _para2;
     const float PI = 3.1415926f;
 
-    public Dictionary<string, int> map = new Dictionary<string, int>
+    static public Dictionary<string, int> map = new Dictionary<string, int>
     {
         {"Ball", 1},
         {"Cube", 2},
@@ -41,7 +53,7 @@ class Object(int _id, int _objType, int _maType, float _para1, float _para2)
     
     public float GetVolume()
     {
-        switch (objType) 
+        switch (map[objType]) 
         {
             case 1:
                 return 4 / 3 * PI * para1 * para1;
@@ -59,7 +71,7 @@ class Object(int _id, int _objType, int _maType, float _para1, float _para2)
     public float GetWeight()
     {
         float density;
-        switch (maType)
+        switch (map[maType])
         {
             case 1:
                 density = 7.87f;
@@ -76,6 +88,12 @@ class Object(int _id, int _objType, int _maType, float _para1, float _para2)
         }
 
         return density * GetVolume();
+    }
+
+    public override string ToString()
+    {
+        return
+            $"{nameof(id)}: {id}, {nameof(objType)}: {objType}, {nameof(maType)}: {maType}, {nameof(para1)}: {para1}, {nameof(para2)}: {para2}";
     }
 
     // public string GetError()

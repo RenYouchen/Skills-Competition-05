@@ -73,7 +73,7 @@ try
         string line;
         while ((line = sr.ReadLine()) != null)
         {
-            List<float> l = line.Split().Select(x => float.Parse(x)).ToList();
+            List<float> l = line.Split(" ").Select(x => float.Parse(x)).ToList();
             boxes.Add(new Box(l[0], l[1], l[2], l[3], l[4], l[5]));
         }
     }
