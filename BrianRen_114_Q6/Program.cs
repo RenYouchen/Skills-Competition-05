@@ -25,13 +25,15 @@ catch (Exception e)
 {
     Console.WriteLine(e);
 }
-
-
+Console.WriteLine(new string('*',(102-13)/2)+"Display Data"+new string('*',(102-13)/2));
 Console.WriteLine($"{"ID", 3} {"ObjType", 13} {"matType", 13} {"PARA1",13} {"PARA2",13} {"Volume",13} {"Weight",13} {"ERROR", 13}");
 Console.WriteLine(string.Join("\n", objs));
+Console.WriteLine(new string('*',102));
 
+Console.WriteLine(new string('*',(102-13)/2)+"Display Data"+new string('*',(102-13)/2));
 Console.WriteLine($"{"ID", 3} {"ObjType", 13} {"matType", 13} {"PARA1",13} {"PARA2",13} {"Volume",13} {"Weight",13} {"ERROR", 13}");
 Console.WriteLine(string.Join("\n", objs.OrderByDescending(x=> Object.map.ContainsKey(x.maType)? Object.map[x.maType] : Object.map["Unknown"])));
+Console.WriteLine(new string('*',102));
 
 class Object(int _id, string _objType, string _maType, float _para1, float _para2)
 {
@@ -114,7 +116,7 @@ class Object(int _id, string _objType, string _maType, float _para1, float _para
 
     public override string ToString()
     {
-        return $"{id, 3} {objType, 13} {maType, 13} {para1,13:F3} {para2,13:F3} {Volume,13:F3} {Weight,13:F3} {error, 13}";
+        return $"{id, 3} {(map.ContainsKey(objType) ? objType : "Unknown"), 13} {(map.ContainsKey(maType) ? objType : "Unknown"), 13} {para1,13:F3} {para2,13:F3} {Volume,13:F3} {Weight,13:F3} {error, 13}";
     }
 }
 
