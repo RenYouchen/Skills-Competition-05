@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.4.11626.88 stable
+VisualStudioVersion = 18.4.11626.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q3_BFS", "BrianRen_114_Q3_BFS\BrianRen_114_Q3_BFS.csproj", "{B466DEDC-A615-433E-AF68-CE6E52D72D3C}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q6", "BrianRen_114_Q6\BrianRen_114_Q6.csproj", "{C2F5DC67-4AE6-4121-8829-D0C11F3BF0B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q1", "BrianRen_114_Q1\BrianRen_114_Q1.csproj", "{0AE9D944-43FB-4634-9C7F-ACA509550C98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q4", "BrianRen_114_Q4\BrianRen_114_Q4.csproj", "{99191BAB-B56B-4844-95F4-89CDFB8806E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +41,15 @@ Global
 		{0AE9D944-43FB-4634-9C7F-ACA509550C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AE9D944-43FB-4634-9C7F-ACA509550C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AE9D944-43FB-4634-9C7F-ACA509550C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99191BAB-B56B-4844-95F4-89CDFB8806E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99191BAB-B56B-4844-95F4-89CDFB8806E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99191BAB-B56B-4844-95F4-89CDFB8806E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99191BAB-B56B-4844-95F4-89CDFB8806E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
 	EndGlobalSection
 EndGlobal
