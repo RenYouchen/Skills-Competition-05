@@ -19,6 +19,8 @@ namespace BrianRen_114_Q4
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int a, b;
+            //(a, b) = richTextBox1.Text.Split('/').Select(x => int.Parse(x));
 
         }
     }
