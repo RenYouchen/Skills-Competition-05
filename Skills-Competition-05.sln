@@ -13,6 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q6", "BrianRen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q1", "BrianRen_114_Q1\BrianRen_114_Q1.csproj", "{0AE9D944-43FB-4634-9C7F-ACA509550C98}"
 EndProject
+<<<<<<< HEAD
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q4", "BrianRen_114_Q4\BrianRen_114_Q4.csproj", "{99191BAB-B56B-4844-95F4-89CDFB8806E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp_Test", "ConsoleApp_Test\ConsoleApp_Test.csproj", "{F47F4B45-94C9-4703-8E24-F9C327568785}"
+EndProject
+>>>>>>> 39b219ad6b32684f18e236e127f8c18b5f6f4983
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +46,17 @@ Global
 		{0AE9D944-43FB-4634-9C7F-ACA509550C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AE9D944-43FB-4634-9C7F-ACA509550C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AE9D944-43FB-4634-9C7F-ACA509550C98}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+=======
+		{99191BAB-B56B-4844-95F4-89CDFB8806E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99191BAB-B56B-4844-95F4-89CDFB8806E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99191BAB-B56B-4844-95F4-89CDFB8806E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99191BAB-B56B-4844-95F4-89CDFB8806E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F47F4B45-94C9-4703-8E24-F9C327568785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47F4B45-94C9-4703-8E24-F9C327568785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47F4B45-94C9-4703-8E24-F9C327568785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47F4B45-94C9-4703-8E24-F9C327568785}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 39b219ad6b32684f18e236e127f8c18b5f6f4983
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
