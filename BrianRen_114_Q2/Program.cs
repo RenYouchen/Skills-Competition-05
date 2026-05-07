@@ -2,12 +2,13 @@
 
 // Console.Write("Enter 1st filename:");
 // var file1 = Console.ReadLine();
+
 var file1 = "Large_1.txt";
 // Console.Write("Enter 2st filename:");
 // var file2 = Console.ReadLine();
 var file2 = "Small_1.txt";
 
-List<string> rawStr1 = File.ReadAllLines($"../../../{file1}").ToList();
+List<char[]> rawStr1 = File.ReadAllLines($"../../../{file1}").Select(x => x.ToCharArray()).ToList();
 List<string> rawStr2 = File.ReadAllLines($"../../../{file2}").ToList();
 // Console.WriteLine(string.Join('\n', rawStr1));
 Large l = new Large();
@@ -18,22 +19,39 @@ s.PardeSmall(rawStr2);
 
 if (s.hT <= l.h1)
 {
-    for (int i = l.PointTop1.Value.Item1; i < l.PointLeft1.Value.Item1; i++)
+    for (int i = l.PointLeft1.Value.Item1 - s.hT; i < l.PointLeft1.Value.Item1; i++)
     {
-        for (int j = l.PointLeft1.Value.Item2; j < l.PointTop1.Value.Item2;j++)
+        for (int j = l.PointTop1.Value.Item2 - (s.BottomRightPoint.Value.Item2 - s.BottomLeftPoint.Value.Item2);
+             j < l.PointTop1.Value.Item2;
+             j++)
         {
-            
-            Console.Write(rawStr1[i][j]);
+            rawStr1[i][j] = rawStr2[s.TopPoint.Value.Item1 + Math.Abs(l.PointLeft1.Value.Item1 - s.hT - i)][
+                s.BottomLeftPoint.Value.Item2 + Math.Abs(l.PointTop1.Value.Item2 -
+                                                         (s.BottomRightPoint.Value.Item2 -
+                                                          s.BottomLeftPoint.Value.Item2) - j)];
         }
-        Console.WriteLine();
     }
 }
 else
 {
-    
+    for (int i = l.PointLeft2.Value.Item1 - s.hT; i < l.PointLeft2.Value.Item1; i++)
+    {
+        for (int j = l.PointTop2.Value.Item2 - (s.BottomRightPoint.Value.Item2 - s.BottomLeftPoint.Value.Item2);
+             j < l.PointTop2.Value.Item2;
+             j++)
+        {
+            rawStr1[i-1][j-1] = rawStr2[s.TopPoint.Value.Item1 + Math.Abs(l.PointLeft2.Value.Item1 - s.hT - i)][
+                s.BottomLeftPoint.Value.Item2 + Math.Abs(l.PointTop2.Value.Item2 -
+                                                         (s.BottomRightPoint.Value.Item2 -
+                                                          s.BottomLeftPoint.Value.Item2) - j)];
+        }
+    }
 }
 
-Console.WriteLine("");
+foreach (var i in rawStr1)
+{
+    Console.WriteLine(i);
+}
 
 class Large
 {
@@ -45,7 +63,7 @@ class Large
     public int h1 => Math.Abs(PointTop1.Value.Item1 - PointLeft1.Value.Item1);
     public int h2 => Math.Abs(PointLeft1.Value.Item1 - PointLeft2.Value.Item1);
 
-    public void ParseLarge(List<string> str)
+    public void ParseLarge(List<char[]> str)
     {
         for (int i = 0; i < str.Count; i++)
         {
@@ -75,6 +93,7 @@ class Large
                     break;
                 }
             }
+
             if (PointLeft1.HasValue) break;
         }
     }
@@ -82,7 +101,7 @@ class Large
 
 class Small
 {
-    public int hT => Math.Abs(TopPoint.Value.Item1 - BottomLeftPoint.Value.Item1)+1;
+    public int hT => Math.Abs(TopPoint.Value.Item1 - BottomLeftPoint.Value.Item1) + 1;
     public (int, int)? TopPoint;
     public (int, int)? BottomLeftPoint;
     public (int, int)? BottomRightPoint;
@@ -99,10 +118,11 @@ class Small
                     break;
                 }
             }
-            if(TopPoint.HasValue) break;
+
+            if (TopPoint.HasValue) break;
         }
-        
-        for (int i = str.Count-1; i > 0; i--)
+
+        for (int i = str.Count - 1; i > 0; i--)
         {
             for (int j = 0; j < str[i].Length; j++)
             {
@@ -114,7 +134,8 @@ class Small
                     break;
                 }
             }
-            if(BottomLeftPoint.HasValue) break;
+
+            if (BottomLeftPoint.HasValue) break;
         }
     }
 }
