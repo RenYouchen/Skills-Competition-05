@@ -63,6 +63,7 @@
             button1.TabIndex = 2;
             button1.Text = "計算";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -73,6 +74,7 @@
             button2.TabIndex = 3;
             button2.Text = "清除";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label2
             // 
