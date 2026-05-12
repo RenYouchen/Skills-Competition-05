@@ -1,5 +1,6 @@
 ﻿int weightTotal, n;
-List<int> w, v = new List<int>();
+List<int> w = new(), v = new();
+
 
 Console.Write("輸入物品的總數量：");
 n = int.Parse(Console.ReadLine());
