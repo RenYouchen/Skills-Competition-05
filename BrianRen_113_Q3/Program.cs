@@ -4,14 +4,7 @@ int y = 1;
 
 for (int i = 1; i <= 9; i++)
 {
-    Console.WriteLine($"x:{x} y:{y}");
     box[x][y] = i;
-    
-    foreach (var a in box)
-    {
-        Console.WriteLine(string.Join(' ', a));
-    }
-    
     ChangePos(ref x, ref y);
     
     Console.WriteLine("--------");
