@@ -6,8 +6,6 @@ for (int i = 1; i <= 9; i++)
 {
     box[x][y] = i;
     ChangePos(ref x, ref y);
-    
-    Console.WriteLine("--------");
 }
 
 
