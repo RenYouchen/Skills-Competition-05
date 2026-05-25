@@ -88,9 +88,20 @@ foreach (var i in Rotate(box, 2))
     Console.WriteLine(string.Join(' ', i));
 }
 
-Console.WriteLine("------transp");
-foreach (var i in FlipHori(Transpose(box))) //TODO fixbug
-{
+Console.WriteLine("------rt2");
+foreach (var i in Transpose(box)) {
     Console.WriteLine(string.Join(' ', i));
 }
-Console.WriteLine("------transp flip");
+Console.WriteLine("------trans");
+foreach (var i in FlipHori(Transpose(box))) {
+    Console.WriteLine(string.Join(' ', i));
+}
+Console.WriteLine("------trans flip");
+foreach (var i in Rotate(box,3)) {
+    Console.WriteLine(string.Join(' ', i));
+}
+Console.WriteLine("------rt3");
+foreach (var i in FlipHori(Rotate(box, 3))) {
+    Console.WriteLine(string.Join(' ', i));
+}
+Console.WriteLine("------rt1");
