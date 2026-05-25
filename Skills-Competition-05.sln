@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_113_Q2", "BrianRen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_113_Q3", "BrianRen_113_Q3\BrianRen_113_Q3.csproj", "{912062C3-2685-4CF6-8AAB-4EB0A1E3007B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_113_Q5", "BrianRen_113_Q5\BrianRen_113_Q5.csproj", "{06152894-54EF-410C-B9E6-61AC121F2C04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{912062C3-2685-4CF6-8AAB-4EB0A1E3007B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{912062C3-2685-4CF6-8AAB-4EB0A1E3007B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{912062C3-2685-4CF6-8AAB-4EB0A1E3007B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06152894-54EF-410C-B9E6-61AC121F2C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06152894-54EF-410C-B9E6-61AC121F2C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06152894-54EF-410C-B9E6-61AC121F2C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06152894-54EF-410C-B9E6-61AC121F2C04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
