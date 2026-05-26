@@ -28,5 +28,5 @@ List<int> sortedItem = [2];
 
 Console.WriteLine($"排序前的資料: {string.Join(' ', randNums.Select(x=> $"{x,3}"))}\n");
 Console.WriteLine($"第  1 次選擇: {string.Join(' ', randNums.Select(x=> $"{x,3}"))}");
-// Console.WriteLine($"              {string.Join(randNums.Select())}");
+Console.WriteLine($"              {string.Join(' ',randNums.Select(x=> sortedItem.Contains(x)?" __":"   "))}");
 //               --
