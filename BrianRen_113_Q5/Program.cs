@@ -1,5 +1,5 @@
-﻿// List<int> randNums = Enumerable.Range(1,39).OrderBy(_=>new Random().Next()).ToList()[..5];
-List<int> randNums = [4,28,11,38,2];
+﻿List<int> randNums = Enumerable.Range(1,39).OrderBy(_=>new Random().Next()).ToList()[..5];
+// List<int> randNums = [4,28,11,38,2];
 
 Console.WriteLine("***模擬今彩539***");
 Console.WriteLine($"今彩539之5個1~39號碼: {string.Join(' ', randNums)}");
@@ -24,9 +24,21 @@ Console.WriteLine($"今彩539之五個號碼的調和平均數: {h:F6}");
 double g = Math.Pow(randNums.Aggregate((acc,x) => acc = x*acc), 1.0/5.0);
 Console.WriteLine($"今彩539之五個號碼的幾何平均數: {g:F6}");
 
-List<int> sortedItem = [2];
+List<int> sortedItem = [];
+int selectItem;
 
 Console.WriteLine($"排序前的資料: {string.Join(' ', randNums.Select(x=> $"{x,3}"))}\n");
-Console.WriteLine($"第  1 次選擇: {string.Join(' ', randNums.Select(x=> $"{x,3}"))}");
-Console.WriteLine($"              {string.Join(' ',randNums.Select(x=> sortedItem.Contains(x)?" __":"   "))}");
-//               --
+//選擇最小的
+for (int i = 1; i <= 4; i++)
+{
+    int m = randNums.Where(x => !sortedItem.Contains(x)).Min();
+    selectItem = randNums[sortedItem.Count];
+    (randNums[sortedItem.Count], randNums[randNums.IndexOf(m)]) = (randNums[randNums.IndexOf(m)], randNums[sortedItem.Count]);
+    sortedItem.Add(m);
+
+    Console.WriteLine($"第  {i} 次選擇: {string.Join(' ', randNums.Select(x=> x == selectItem?$"{x,3}*" :$"{x,3}"))}");
+    Console.WriteLine($"              {string.Join(' ',randNums.Select(x=> sortedItem.Contains(x)?" __":"   "))}");
+}
+Console.WriteLine($"排序後的資料: {string.Join(' ', randNums.Select(x=> $"{x,3}"))}\n");
+Console.WriteLine($"今彩539之5個號碼的中位數: {randNums[2]}");
+
