@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            label1 = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -42,29 +42,30 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // label1
+            // textBox1
             // 
-            label1.Location = new Point(12, 74);
-            label1.Name = "label1";
-            label1.Size = new Size(628, 752);
-            label1.TabIndex = 1;
-            label1.Text = "label1";
+            textBox1.Location = new Point(12, 64);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(776, 801);
+            textBox1.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 877);
-            Controls.Add(label1);
+            Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
-        private Label label1;
+        private TextBox textBox1;
     }
 }
