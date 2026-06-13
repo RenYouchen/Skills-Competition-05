@@ -1,40 +1,41 @@
-﻿Console.WriteLine("請輸入節點數N：");
-int N = int.Parse(Console.ReadLine());
-Console.WriteLine("請輸入N-1行血緣關係(每行兩個整數，以空格分割)");
-List<List<int>> graph = Enumerable.Repeat(0, N+1).Select(_=>new List<int>()).ToList();
+﻿var n = int.Parse(Console.ReadLine());
+List<List<int>> graph = Enumerable.Repeat(0, n+1).Select(_=>new List<int>()).ToList();
 
-for (int i = 0; i < N - 1; i++)
+for (int i = 0; i < n - 1; i++)
 {
-    var input = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
-    graph[input[0]].Add(input[1]);
-    graph[input[1]].Add(input[0]);
+    var a = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+    graph[a[0]].Add(a[1]);
+    graph[a[1]].Add(a[0]);
 }
 
-List<bool> visited = Enumerable.Repeat(false, N+1).ToList();
+List<bool> visited = Enumerable.Repeat(false, n + 1).ToList();
 
-(int, int) DFS(int currentNode, int depth)
+(int, int) dfs(int currentNode, int depth)
 {
     visited[currentNode] = true;
-    var farestNode = currentNode;
+    int farestNode = currentNode;
     int maxDepth = depth;
-    foreach (var node in graph[currentNode]) 
+    
+    foreach (var n in graph[currentNode])
     {
-        if (!visited[node])
+        if (!visited[n])
         {
-            var (x, y) = DFS(node, depth + 1);
-            if (y > maxDepth)
+            var a = dfs(n, depth + 1);
+            if (a.Item2 > maxDepth)
             {
-                (farestNode, maxDepth) = (x, y);
+                farestNode = a.Item1;
+                maxDepth = a.Item2;
             }
         }
-    }
+    } 
     return (farestNode, maxDepth);
 }
 
-var (x,y) = DFS(1,0);
+var x = dfs(1,0);
 for (int i = 0; i < visited.Count; i++)
 {
     visited[i] = false;
 }
-var a = DFS(x, 0);
-Console.WriteLine(a.Item2);
+
+var y = dfs(x.Item1, 0);
+Console.WriteLine(y.Item2);
