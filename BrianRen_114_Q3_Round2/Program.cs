@@ -12,12 +12,12 @@ for (int i = 0; i < N-1; i++)
 
 List<bool> Visited = Enumerable.Repeat(false, N + 1).ToList();
 
-(int, int) DFS(int CurrentNode, int depth)
+(int, int) DFS(int currentNode, int depth)
 {
-    Visited[CurrentNode] = true;
-    int farestNode = CurrentNode;
+    Visited[currentNode] = true;
+    int farestNode = currentNode;
     int maxDepth = depth;
-    foreach (var v in Graph[CurrentNode])
+    foreach (var v in Graph[currentNode])
     {
         if (!Visited[v]) {
             var (x,y) = DFS(v, depth + 1);
