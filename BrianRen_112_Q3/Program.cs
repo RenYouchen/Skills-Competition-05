@@ -43,10 +43,11 @@ int CheckWin()
 }
 
 int count = 0;
+Console.WriteLine("你為Ｏ、電腦為Ｘ\n位置對應數字鍵盤\n");
+PrintBoard();
 while (true)
 {
-    Console.WriteLine("你為Ｏ、電腦為Ｘ\n位置對應數字鍵盤\n");
-    PrintBoard();
+    
     Console.Write("請輸入1～9(按0鍵結束)：");
     
     int a = int.Parse(Console.ReadLine());
