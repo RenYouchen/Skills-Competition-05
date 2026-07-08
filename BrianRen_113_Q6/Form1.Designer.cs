@@ -36,6 +36,7 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label2 = new Label();
+            colorDialog1 = new ColorDialog();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -49,6 +50,7 @@
             button1.TabIndex = 0;
             button1.Text = "讀取影像";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -57,8 +59,9 @@
             button2.Name = "button2";
             button2.Size = new Size(243, 102);
             button2.TabIndex = 1;
-            button2.Text = "儲存印象";
+            button2.Text = "儲存影像";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -69,6 +72,7 @@
             button3.TabIndex = 3;
             button3.Text = "灰階轉換";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -79,6 +83,7 @@
             button4.TabIndex = 2;
             button4.Text = "邊緣檢測";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label1
             // 
@@ -91,17 +96,21 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = SystemColors.ActiveBorder;
             pictureBox1.Location = new Point(385, 139);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(500, 500);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = SystemColors.ActiveBorder;
             pictureBox2.Location = new Point(948, 139);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(500, 500);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 7;
             pictureBox2.TabStop = false;
             // 
@@ -145,5 +154,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label2;
+        private ColorDialog colorDialog1;
     }
 }
