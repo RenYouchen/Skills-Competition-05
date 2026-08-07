@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Hello, World!");
+﻿var file1 = File.ReadLines("_f1.txt");
+
 
 record Elevator(ElevatorState State, int CurrentFloor);
 

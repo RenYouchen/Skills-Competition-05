@@ -63,7 +63,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_113_Q6", "BrianRen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_112_Q5", "BrianRen_112_Q5\BrianRen_112_Q5.csproj", "{D3C64AC7-73D8-4D09-A66F-4377AF510143}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_112_Q6", "BrianRen_112_Q6\BrianRen_112_Q6.csproj", "{FCD64B9D-EE1E-462B-91EF-FDB3C96F27EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_112_Q6_Unfinished", "BrianRen_112_Q6_Unfinished\BrianRen_112_Q6_Unfinished.csproj", "{FCD64B9D-EE1E-462B-91EF-FDB3C96F27EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
