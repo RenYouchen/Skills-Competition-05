@@ -1,0 +1,23 @@
+﻿using static System.Console;
+
+Write("請輸入10位元的key：");
+var input = ReadLine();
+// var input = "1100011110";
+// var phase1 = input[2]+input[4]+input[1]+input[6]+input[2]+input[9]+input[0]+input[8]+input[7]+input[5];
+int num = Convert.ToInt32(input, 2);
+WriteLine($"輸入 key：{string.Join(' ', input.ToCharArray())} = 0x{num:x}");
+var phase1 = $"{input[2]}{input[4]}{input[1]}{input[6]}{input[3]}{input[9]}{input[0]}{input[8]}{input[7]}{input[5]}";
+num = Convert.ToInt32(phase1, 2);
+WriteLine($"重排列10：{string.Join(' ', phase1.ToCharArray())} = 0x{num:x}");
+var phase2 = $"{phase1[1..5]}{phase1[0]}{phase1[6..10]}{phase1[5]}";
+num = Convert.ToInt32(phase2, 2);
+WriteLine($"左旋轉1：{string.Join(' ', phase2.ToCharArray())} = 0x{num:x}");
+var key1 = $"{phase2[5]}{phase2[2]}{phase2[6]}{phase2[3]}{phase2[7]}{phase2[4]}{phase2[9]}{phase2[8]}";
+num = Convert.ToInt32(key1, 2);
+WriteLine($"重排列8：{string.Join(' ', key1.ToCharArray())} = 0x{num:x}");
+var phase3 = $"{phase2[2..5]}{phase2[..2]}{phase2[7..]}{phase2[5..7]}";
+num = Convert.ToInt32(phase3, 2);
+WriteLine($"左旋轉2：{string.Join(' ', phase3.ToCharArray())} = 0x{num:x}");
+var key2 = $"{phase3[5]}{phase3[2]}{phase3[6]}{phase3[3]}{phase3[7]}{phase3[4]}{phase3[9]}{phase3[8]}";
+num = Convert.ToInt32(key2, 2);
+WriteLine($"重排列8：{string.Join(' ', key2.ToCharArray())} = 0x{num:x}");
