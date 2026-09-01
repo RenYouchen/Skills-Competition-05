@@ -41,11 +41,11 @@ int GCD(int a, int b)
 char IsPrime(int n) => GetFactor(n).Count > 1 ? 'N' : 'Y';
 
 string FormatList(List<int> input1, List<int> input2, int gcd) =>
-    $"{string.Join(',',new[] { input1, input2 }
+    $"{string.Join(", ",new[] { input1, input2 }
         .Select(x => string.Join('*', x
             .GroupBy(f=>f)
-            .Select(g => g.Count() > 1 ? $"{g.Key}^{g.Count()}" : $"{g.Key}"))))},{gcd},{IsPrime(gcd)}";
-// {
+            .Select(g => g.Count() > 1 ? $"{g.Key}^{g.Count()}" : $"{g.Key}"))))}, {gcd}, {IsPrime(gcd)}";
+// { 
 //     // return string.Join('*', input1
 //     //     .GroupBy(f => f)
 //     //     .Select(g => g.Count() > 1 ? $"{g.First()}^{g.Count()}" : $"{g.First()}")
