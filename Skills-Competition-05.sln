@@ -113,6 +113,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "商科賽", "商科賽", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_108_Q4_1", "BrianRen_108_Q4_1\BrianRen_108_Q4_1.csproj", "{44690FDC-63AB-4E2E-8317-6D1DDA82D15D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_109_Q5_Math_Homework", "BrianRen_109_Q5_Math_Homework\BrianRen_109_Q5_Math_Homework.csproj", "{0E628055-F536-418B-86BB-6F8ED0E0E9DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -319,6 +321,10 @@ Global
 		{44690FDC-63AB-4E2E-8317-6D1DDA82D15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44690FDC-63AB-4E2E-8317-6D1DDA82D15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44690FDC-63AB-4E2E-8317-6D1DDA82D15D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E628055-F536-418B-86BB-6F8ED0E0E9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E628055-F536-418B-86BB-6F8ED0E0E9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E628055-F536-418B-86BB-6F8ED0E0E9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E628055-F536-418B-86BB-6F8ED0E0E9DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -373,6 +379,7 @@ Global
 		{AC36C4B9-4BA8-4DDB-AE23-B322CFDD2E70} = {5669193F-EA7D-4E37-B566-6374B349262F}
 		{21A84B46-EDDD-4294-A420-9B33FAA9B387} = {5669193F-EA7D-4E37-B566-6374B349262F}
 		{44690FDC-63AB-4E2E-8317-6D1DDA82D15D} = {7DDA9F9A-8FED-4D61-ABD6-1C508D1E01C1}
+		{0E628055-F536-418B-86BB-6F8ED0E0E9DE} = {5669193F-EA7D-4E37-B566-6374B349262F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
