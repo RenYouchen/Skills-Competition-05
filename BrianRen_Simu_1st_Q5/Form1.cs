@@ -22,7 +22,7 @@ namespace BrianRen_Simu_1st_Q5
                 var rawPos = rawText[i].Split(' ').Select(int.Parse).ToList();
                 int w = rawPos[2] - rawPos[0];
                 int h = rawPos[3] - rawPos[1];
-                rects.Add(new Rectangle(rawPos[0] * 10, rawPos[1] * 10, w * 10, h * 10));
+                rects.Add(new Rectangle(rawPos[0], rawPos[1], w, h));
             }
             panel1.Refresh();
         }
@@ -63,7 +63,7 @@ namespace BrianRen_Simu_1st_Q5
                 }
             }
             flag = false; panel1.Refresh();
-            textBox1.Text = (count/100).ToString();
+            textBox1.Text = (count).ToString();
         }
     }
 }

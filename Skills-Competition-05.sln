@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 18
-VisualStudioVersion = 18.4.11626.88
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37710.0 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114_Q3_BFS", "BrianRen_114_Q3_BFS\BrianRen_114_Q3_BFS.csproj", "{B466DEDC-A615-433E-AF68-CE6E52D72D3C}"
 EndProject
@@ -117,7 +117,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_109_Q5_Math_Homewo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "模擬賽", "模擬賽", "{0FB6342E-F627-4EBA-8D96-84D8B28CC31D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "校內模擬賽-105", "校內模擬賽-105", "{A67314E3-52A1-4208-A598-99FC7FADED49}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "校內模擬賽-105第一次模擬賽", "校內模擬賽-105第一次模擬賽", "{A67314E3-52A1-4208-A598-99FC7FADED49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "105_Q1", "105_Q1\105_Q1\105_Q1.csproj", "{DC1219F7-1D99-4B00-A1AC-4FE88BC39BBC}"
 EndProject
