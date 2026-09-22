@@ -149,6 +149,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{EAD02045
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "大數四則運算", "大數四則運算\大數四則運算.csproj", "{DFD7E7AB-4217-46CC-AF7A-62C79578FF77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_109_Q6_Pattern_Search_In_BMP", "BrianRen_109_Q6_Pattern_Search_In_BMP\BrianRen_109_Q6_Pattern_Search_In_BMP.csproj", "{C193E1E6-83C8-4C1E-9FEC-BE724EC634C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -411,6 +413,10 @@ Global
 		{DFD7E7AB-4217-46CC-AF7A-62C79578FF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFD7E7AB-4217-46CC-AF7A-62C79578FF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFD7E7AB-4217-46CC-AF7A-62C79578FF77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C193E1E6-83C8-4C1E-9FEC-BE724EC634C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C193E1E6-83C8-4C1E-9FEC-BE724EC634C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C193E1E6-83C8-4C1E-9FEC-BE724EC634C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C193E1E6-83C8-4C1E-9FEC-BE724EC634C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -481,6 +487,7 @@ Global
 		{9EB33E0A-F4DE-46E4-A85E-96C83B4B2AC8} = {4D50F294-7159-421B-ABF8-193C83BC2029}
 		{64156A7C-BB8E-412F-9A34-22409D619DE5} = {4D50F294-7159-421B-ABF8-193C83BC2029}
 		{DFD7E7AB-4217-46CC-AF7A-62C79578FF77} = {EAD02045-5DD8-4929-A7FB-5621935E3F82}
+		{C193E1E6-83C8-4C1E-9FEC-BE724EC634C5} = {5669193F-EA7D-4E37-B566-6374B349262F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
