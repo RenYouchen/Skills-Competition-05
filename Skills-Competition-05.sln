@@ -165,6 +165,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_108_Q3_Decoder", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_108_Q3_Encoder", "BrianRen_108_Q3_Encoder\BrianRen_108_Q3_Encoder.csproj", "{C573380F-E7CA-4596-A438-073DCD4B0690}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_108_Q5_Wide_Game", "BrianRen_108_Q5_Wide_Game\BrianRen_108_Q5_Wide_Game.csproj", "{8410E6D0-49DD-4CEC-934B-D113413FD8E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -459,6 +461,10 @@ Global
 		{C573380F-E7CA-4596-A438-073DCD4B0690}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C573380F-E7CA-4596-A438-073DCD4B0690}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C573380F-E7CA-4596-A438-073DCD4B0690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8410E6D0-49DD-4CEC-934B-D113413FD8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8410E6D0-49DD-4CEC-934B-D113413FD8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8410E6D0-49DD-4CEC-934B-D113413FD8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8410E6D0-49DD-4CEC-934B-D113413FD8E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -537,6 +543,7 @@ Global
 		{41C89CCA-E031-410F-A74F-D43CB65263F5} = {5669193F-EA7D-4E37-B566-6374B349262F}
 		{B0EE13F1-A00C-42B7-8EA7-A73CEAF23CD6} = {5669193F-EA7D-4E37-B566-6374B349262F}
 		{C573380F-E7CA-4596-A438-073DCD4B0690} = {EAD02045-5DD8-4929-A7FB-5621935E3F82}
+		{8410E6D0-49DD-4CEC-934B-D113413FD8E7} = {5669193F-EA7D-4E37-B566-6374B349262F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
