@@ -364,3 +364,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# macOS
+.DS_Store
+
+# 比賽繳交用的編譯輸出
+*.exe
+*.dll
+*.deps.json
+*.runtimeconfig.json
