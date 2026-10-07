@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-/*
+﻿/*
 6 2
 2 50
 4 60
@@ -27,7 +26,7 @@ for(int i = 0; i < Q; i++)
 }
 
 Console.WriteLine($"COUNT {hs.Count()}");
-Console.WriteLine($"AVERAGE {(float)hs.Select(x=>x.Item2).Average()}");
+Console.WriteLine($"AVERAGE {(float)hs.Select(x=>x.Item2).Average():F2}");
 hs.Sort((a,b)=> a.Item1.CompareTo(b.Item2));
 
 Console.WriteLine($"MEDIAN {hs[hs.Count/2]}");
