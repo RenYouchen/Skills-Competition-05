@@ -26,17 +26,33 @@ for(int i = 0; i < Q; i++)
 }
 
 Console.WriteLine($"COUNT {hs.Count()}");
-Console.WriteLine($"AVERAGE {(float)hs.Select(x=>x.Item2).Average():F2}");
-hs.Sort((a,b)=> a.Item1.CompareTo(b.Item2));
+var avarage = (double)hs.Select(x => x.Item2).Average();
+Console.WriteLine($"AVERAGE {avarage:F2}");
+hs.Sort((a,b)=> a.Item2.CompareTo(b.Item2));
+var mid = hs.Count % 2 == 1 ? hs[hs.Count / 2].Item2 : (hs[hs.Count / 2 - 1].Item2 + hs[hs.Count / 2].Item2) / 2;
+Console.WriteLine($"MEDIAN {mid:F2}");
+var stddev = Math.Sqrt(hs.Sum(x=>Math.Pow((double)x.Item2 - avarage, 2)) / (int)N);
+Console.WriteLine($"STDDEV {stddev:F2}");
+var passRate = (double)hs.Count(x => x.Item2 >= 60) / hs.Count * 100;
+Console.WriteLine($"PASS_RATE {passRate:F2}%");
+Console.WriteLine($"MAX {hs.Max(x=>x.Item2)}");
+Console.WriteLine($"MIN {hs.Min(x=>x.Item2)}");
+var xAverage = hs.Sum(x => x.Item1) / N;
+var yAverage = hs.Sum(x => x.Item2) / N;
+var Sxx = hs.Sum(x => Math.Pow((double)(x.Item1 - xAverage), 2));
+var Syy = hs.Sum(x => Math.Pow((double)(x.Item2 - yAverage), 2));
+var Sxy = (double)hs.Sum(x => (x.Item1 - xAverage) * (x.Item2 - yAverage));
+var C = Sxy / Math.Sqrt(Sxx * Syy) ;
+var S = (Sxx == 0?0:Sxy / Sxx);
+var I = (double)yAverage - (S * (double)xAverage);
+double Fix(double n) => Math.Abs(n) < 0.005 ? 0 : n;
 
-Console.WriteLine($"MEDIAN {hs[hs.Count/2]}");
-Console.WriteLine($"STDDEV {hs.Count()}");
-Console.WriteLine($"PASS_RATE {hs.Count()}");
-Console.WriteLine($"MAX {hs.Count()}");
-Console.WriteLine($"MIN {hs.Count()}");
-Console.WriteLine($"CORRELATION {hs.Count()}");
-Console.WriteLine($"SLOPE {hs.Count()}");
-Console.WriteLine($"INTERCEPT {hs.Count()}");
+Console.WriteLine($"CORRELATION {(double.IsNaN(C)? 0: Fix(C)):F2}");
+Console.WriteLine($"SLOPE {(double.IsNaN(S)? 0: Fix(S)):F2}");
+Console.WriteLine($"INTERCEPT {(double.IsNaN(I)? 0: Fix(I)):F2}");
+foreach (var i in p)
+{
+    var Pi = (S * (double)i) + I;
+    Console.WriteLine($"PREDICT {i} {(double.IsNaN(Pi)? 0: Fix(Pi)):F2}");
+}
 
-
-Console.WriteLine($"PREDICT {hs.Count()}");
