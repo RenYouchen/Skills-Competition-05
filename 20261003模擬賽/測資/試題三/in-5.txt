@@ -1,0 +1,6 @@
+2026-09-04 11:00:00|INFO|AUTH|login success for alice
+2026-09-04 11:01:10|WARN|AUTH|login attempt delayed
+2026-09-04 11:02:20|ERROR|AUTH|login failed for bob
+2026-09-04 11:03:30|INFO|REPORT|daily report created
+2026-09-04 11:04:40|WARN|NETWORK|network latency detected
+2026-09-04 11:05:50|ERROR|DATABASE|query timeout

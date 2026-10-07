@@ -1,0 +1,5 @@
+2026-09-10 09:00:00|INFO|SYSTEM|service started
+2026-09-10 09:02:15|INFO|AUTH|login success for alice
+2026-09-10 09:05:00|WARN|NETWORK|network latency detected
+2026-09-10 09:07:42|ERROR|DATABASE|connection failed
+2026-09-10 09:10:10|INFO|REPORT|daily report completed
