@@ -52,7 +52,7 @@ namespace 任宥臣_Q2 {
         {
             var clsID = textBox1.Text;
             var clsName = textBox2.Text;
-            if (clsName == "")
+            if (string.IsNullOrWhiteSpace(clsName))
             {
                 MessageBox.Show("教室名稱不可爲空");
                 return;
@@ -70,11 +70,18 @@ namespace 任宥臣_Q2 {
         ClassData select;
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "")
+            if (string.IsNullOrWhiteSpace(textBox2.Text))
             {
                 MessageBox.Show("教室名稱不可爲空");
                 return;
             }
+
+            if (classes.Any(x => x.name == textBox2.Text))
+            {
+                MessageBox.Show("教室名稱不可重複");
+                return;
+            }
+
             var update = select with { name = textBox2.Text };
             classes[classes.IndexOf(classes.First(x => x.id == update.id))] = update;
 
@@ -85,6 +92,7 @@ namespace 任宥臣_Q2 {
         }
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count == 0) return;
             var selectItem = dataGridView1.SelectedRows[0];
             select = (ClassData)selectItem.DataBoundItem;
             Debug.WriteLine(select.ToString());
@@ -102,13 +110,15 @@ namespace 任宥臣_Q2 {
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (textBox4.Text == "" || textBox5.Text == "" || comboBox1.Text == "")
+            if (string.IsNullOrWhiteSpace(textBox5.Text) || comboBox1.Text == "")
             {
                 MessageBox.Show("不可爲空");
                 return;
             }
 
-            if (dtp1.Value > dtp2.Value)
+            
+
+            if (dtp1.Value >= dtp2.Value)
             {
                 MessageBox.Show("Start Time Must Before End Time");
                 return;
@@ -151,12 +161,14 @@ namespace 任宥臣_Q2 {
         ReverseData reverseSelect;
         private void button5_Click(object sender, EventArgs e)
         {
-            if (textBox4.Text == "")
+
+            if (reverseDatas.Count == 0) return;
+            if (string.IsNullOrWhiteSpace(textBox5.Text))
             {
                 MessageBox.Show("不可爲空");
                 return;
             }
-            if (dtp1.Value > dtp2.Value)
+            if (dtp1.Value >= dtp2.Value)
             {
                 MessageBox.Show("Start Time Must Before End Time");
                 return;
