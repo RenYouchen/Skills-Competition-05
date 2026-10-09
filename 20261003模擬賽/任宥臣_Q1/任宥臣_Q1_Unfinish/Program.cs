@@ -15,41 +15,60 @@ int n = nab[0];
 int a = nab[1];
 int b = nab[2];
 
-List<Work> works = new List<Work>();
+int time = 0;
+List<Work> jobs = new List<Work>();
+List<string> order = new List<string>();
 for (int i = 0; i < n; i++)
 {
     var data = Console.ReadLine().Split();
-    works.Add(new Work(data[0], int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3])));
+    jobs.Add(new Work(data[0], int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3])));
 }
-works.Sort((a,b) => a.T.CompareTo(b.T));
-var sortByTime = works.GroupBy(x => x.T).ToList();
-PriorityQueue<string, int> pq = new PriorityQueue<string, int>();
-List<Work> done = new List<Work>();
-int timer = 0;
-Work currentWork = null;
-while (done.Count != works.Count)
+List<Work> pending = new List<Work>(jobs);
+
+while (pending.Count > 0)
 {
-    foreach (var work in works)
+    var ready = pending.Where(x => x.T <= time).ToList();
+    if (ready.Count == 0)
     {
-        if(currentWork == null)
-        {
-            if (!done.Contains(work) && work.T == timer)
-            {
-                pq.Enqueue(work.I, work.T);
-            }
-        }
+        time = pending.Min(x => x.T);
+        continue;
     }
 
-    currentWork = works.Find(x=>x.I == pq.Dequeue());
-    
+    var next = ready.Where((x => x.bypass >= b)).FirstOrDefault();
+    if (next != null)
+        next.forced = true;
+    else
+        next = ready
+            .OrderByDescending(x => x.P + (time - x.T) / a)
+            .First();
 
-    if(currentWork != null && currentWork.T + currentWork.D > timer)
+    foreach (var work in ready)
     {
-        done.Add(currentWork);
-        currentWork = null;
+        if (work != next) work.bypass++;
     }
 
-    timer++;
-
+    next.start = time;
+    next.finish = time + next.D;
+    time = next.finish;
+    order.Add(next.I);
+    pending.Remove(next);
 }
-record Work(string I, int T, int D, int P);
+
+Console.WriteLine(string.Join(" ", order));
+
+Console.WriteLine("ID START FINISH WAIT TURNAROUND BYPASS FORCED");
+foreach (var w in jobs)
+{
+    Console.WriteLine($"{w.I} {w.start} {w.finish} {w.wait} {w.turnaround} {w.bypass} {(w.forced==false? 0:1)}");
+}
+
+record Work(string I, int T, int D, int P) 
+{
+    public int start { get; set; }
+    public int finish { get; set; }
+    public int bypass { get; set; }
+    public bool forced {get; set;}
+
+    public int wait => start - T;
+    public int turnaround => finish - T;
+}
