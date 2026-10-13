@@ -155,7 +155,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_109_Q1_Number_Conv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_109_Q2_Image_Label", "BrianRen_109_Q2_Image_Label\BrianRen_109_Q2_Image_Label.csproj", "{EF0BFF8D-1A49-4F80-B618-54B7097BD266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_109_Q4_DrawOutline_Unfinished", "BrianRen_109_Q4_DrawOutline\BrianRen_109_Q4_DrawOutline_Unfinished.csproj", "{3BD5AC72-F3B8-49DC-B22B-2898E6B62513}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_109_Q4_DrawOutline", "BrianRen_109_Q4_DrawOutline\BrianRen_109_Q4_DrawOutline.csproj", "{3BD5AC72-F3B8-49DC-B22B-2898E6B62513}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_108_Q1_Vending_Machine", "BrianRen_108_Q1_Vending_Machine\BrianRen_108_Q1_Vending_Machine.csproj", "{FB1CA27F-69B4-41E7-9FF4-8A0685F4660E}"
 EndProject

@@ -25,6 +25,9 @@ namespace BrianRen_109_Q4_DrawOutline {
                     Random.Shared.Next(40, 200)
                 ));
             }
+
+            //rects.Add(new Rectangle(0, 0, 100, 100));
+            //rects.Add(new Rectangle(50, 50, 100, 100));
             panel1.Refresh();
         }
 
@@ -55,55 +58,53 @@ namespace BrianRen_109_Q4_DrawOutline {
                 g.DrawRectangle(pens[i], rects[i]);
             }
 
-            for (int i = 0; i < points.Count; i++)
+            //for (int i = 0; i < points.Count; i++)
+            //{
+            //    g.FillRectangle(new SolidBrush(Color.Red), points[i].X, points[i].Y, 3, 3);
+            //}
+            var rPen = new Pen(Color.Red); rPen.Width = 5;
+            for (int i = 0; i < lines.Count; i++)
             {
-                g.FillRectangle(new SolidBrush(Color.Red), points[i].X, points[i].Y, 10, 10);
+                g.DrawLine(rPen, lines[i].Item1, lines[i].Item2);
             }
         }
         List<(Point, Point)> lines = new List<(Point, Point)>();
 
         private void findLines()
         {
-            var x = rects
+            var xs = rects
                 .SelectMany(r => new[] { r.Left, r.Right })
                 .Distinct()
                 .Order().ToList();
-            var y = rects
+            var ys = rects
                 .SelectMany(r => new[] { r.Top, r.Bottom })
                 .Distinct()
                 .Order().ToList();
 
-            bool[,] covered = new bool[x.Count, y.Count ];
-            points.Clear();
-            
-            //foreach(var ix in x)
-            //{
-            //    foreach(var iy in y)
-            //    {
-            //        foreach(var rect in rects)
-            //        {
-            //            if(rect.Left > ix || rect.Right < ix || rect.Top > iy || rect.Bottom < iy)
-            //            {
-            //                covered[ix, iy] = true;
-            //                } 
-            //        }
-            //    }
-            //}
+            int nx = xs.Count() - 1, ny = ys.Count() - 1;
 
-            for(int i = 0; i < x.Count; i++)
-            {
-                for(int j  = 0; j < y.Count; j++)
+            bool[,] covered = new bool[nx, ny];
+            points.Clear();
+            lines.Clear();
+
+            for (int i = 0; i < nx; i++)
+                for (int j = 0; j < ny; j++)
+                    covered[i, j] = rects.Any(r => r.Left <= xs[i] && r.Right >= xs[i + 1]
+                                                && r.Top <= ys[j] && r.Bottom >= ys[j + 1]);
+            ////DEBUG
+            //for (int i = 0; i < nx; i++)
+            //    for (int j = 0; j < ny; j++)
+            //        if (covered[i, j] == true) points.Add(new Point(xs[i], ys[j]));
+
+            for (int i = 0; i < nx; i++)
+                for (int j = 0; j < ny; j++)
                 {
-                    foreach(var rect in rects)
-                    {
-                        if (rect.Left > x[i] || rect.Right < x[i] || rect.Top > y[j] || rect.Bottom < y[j])
-                        {
-                            covered[i, j] = true;
-                            points.Add(new Point(x[i], y[j]));
-                        }
-                    }
+                    if (!covered[i, j]) continue;
+                    if (i == 0 || !covered[i - 1, j] /*最左邊或是左邊空的*/) lines.Add((new Point(xs[i], ys[j]), new Point(xs[i], ys[j + 1])));//LEFT
+                    if (i == nx-1 || !covered[i + 1, j]) lines.Add((new Point(xs[i+1], ys[j]), new Point(xs[i + 1], ys[j + 1])));//RIGHT
+                    if (j == 0 || !covered[i, j - 1]) lines.Add((new Point(xs[i], ys[j]), new Point(xs[i + 1], ys[j])));//TOP
+                    if (j == ny-1 || !covered[i, j + 1]) lines.Add((new Point(xs[i], ys[j + 1]), new Point(xs[i+1], ys[j + 1])));//BOTTOM
                 }
-            }
 
             Console.WriteLine();
         }
