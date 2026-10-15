@@ -205,6 +205,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_107_Q1_Traffic_Lig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_107_Q6_Huffman_Decoding", "BrianRen_107_Q6_Huffman_Decoding\BrianRen_107_Q6_Huffman_Decoding.csproj", "{ED4E406C-EB44-4B7A-A4EC-E5A1C159DC34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_107_Q2_Stock_Predict", "BrianRen_107_Q2_Stock_Predict\BrianRen_107_Q2_Stock_Predict.csproj", "{EEF7BD06-EA14-4FE8-8383-048EA6C08275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_108_Q6_Petri_Net_SImu", "BrianRen_108_Q6_Petri_Net_SImu\BrianRen_108_Q6_Petri_Net_SImu.csproj", "{98AA4369-6BC2-457C-9367-085480EB8CF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_107_Q3_PasswordChecker", "BrianRen_107_Q3_PasswordChecker\BrianRen_107_Q3_PasswordChecker.csproj", "{D3C1C419-CB20-4CAA-BF81-B516A0B469A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_107_Q5_Max_SubArraySum", "BrianRen_107_Q5_Max_SubArraySum\BrianRen_107_Q5_Max_SubArraySum.csproj", "{6A7B4BBA-D130-48F6-AF33-DB83B8C35704}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -555,10 +563,6 @@ Global
 		{E04961A0-CCC5-422D-97AF-F892E71B2357}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E04961A0-CCC5-422D-97AF-F892E71B2357}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E04961A0-CCC5-422D-97AF-F892E71B2357}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED4E406C-EB44-4B7A-A4EC-E5A1C159DC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED4E406C-EB44-4B7A-A4EC-E5A1C159DC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED4E406C-EB44-4B7A-A4EC-E5A1C159DC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED4E406C-EB44-4B7A-A4EC-E5A1C159DC34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -656,7 +660,6 @@ Global
 		{2B51B762-4C4C-4CEE-850A-74FBD6AC291A} = {74B65DC2-4327-4C6F-96E6-9DA664595325}
 		{248711CE-53C0-72CC-AB37-200C2F27CF12} = {5669193F-EA7D-4E37-B566-6374B349262F}
 		{E04961A0-CCC5-422D-97AF-F892E71B2357} = {5669193F-EA7D-4E37-B566-6374B349262F}
-		{ED4E406C-EB44-4B7A-A4EC-E5A1C159DC34} = {5669193F-EA7D-4E37-B566-6374B349262F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
