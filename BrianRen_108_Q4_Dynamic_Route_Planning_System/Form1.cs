@@ -13,6 +13,7 @@ namespace BrianRen_108_Q4_Dynamic_Route_Planning_System {
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             //for (int i = 0; i < 11; i++)
             //    for (int j = 0; j < 11; j++) map[i, j] = false;
             map = new bool[11, 11]; //直接初始化
