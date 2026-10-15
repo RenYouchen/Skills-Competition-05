@@ -199,6 +199,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_115_Simu_Q3_LogAna
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_115_Simu_Q5_LogChart", "20261003模擬賽\BrianRen_115_Simu_Q5_LogChart\BrianRen_115_Simu_Q5_LogChart.csproj", "{2B51B762-4C4C-4CEE-850A-74FBD6AC291A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_108_Q4_Dynamic_Route_Planning_System", "BrianRen_108_Q4_Dynamic_Route_Planning_System\BrianRen_108_Q4_Dynamic_Route_Planning_System.csproj", "{248711CE-53C0-72CC-AB37-200C2F27CF12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -541,6 +543,10 @@ Global
 		{2B51B762-4C4C-4CEE-850A-74FBD6AC291A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B51B762-4C4C-4CEE-850A-74FBD6AC291A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B51B762-4C4C-4CEE-850A-74FBD6AC291A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248711CE-53C0-72CC-AB37-200C2F27CF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248711CE-53C0-72CC-AB37-200C2F27CF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248711CE-53C0-72CC-AB37-200C2F27CF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248711CE-53C0-72CC-AB37-200C2F27CF12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -636,6 +642,7 @@ Global
 		{73B6ADA6-DE67-42EE-9FE3-A4B95FB1A535} = {A7D7E891-657D-4939-820D-4260EAA00C84}
 		{104D81FA-C1A3-48DD-AAA4-E3E4EEFACCBF} = {74B65DC2-4327-4C6F-96E6-9DA664595325}
 		{2B51B762-4C4C-4CEE-850A-74FBD6AC291A} = {74B65DC2-4327-4C6F-96E6-9DA664595325}
+		{248711CE-53C0-72CC-AB37-200C2F27CF12} = {5669193F-EA7D-4E37-B566-6374B349262F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
