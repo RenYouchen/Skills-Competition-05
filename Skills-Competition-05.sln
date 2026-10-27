@@ -229,6 +229,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114-4_Simu_Q5_Conv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114-4_Simu_Q3_JSON_Analyzer", "BrianRen_114-4_Simu_Q3_JSON_Analyzer\BrianRen_114-4_Simu_Q3_JSON_Analyzer.csproj", "{3C30A049-4206-4DA5-A1D0-40797A0AE4D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114-1_Q2_MatrixProcessingAndChangeColor", "BrianRen_114-1_Q2_MatrixProcessingAndChangeColor\BrianRen_114-1_Q2_MatrixProcessingAndChangeColor.csproj", "{ACAE634C-C902-4C23-B33E-011264D41381}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -627,6 +629,10 @@ Global
 		{3C30A049-4206-4DA5-A1D0-40797A0AE4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C30A049-4206-4DA5-A1D0-40797A0AE4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C30A049-4206-4DA5-A1D0-40797A0AE4D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACAE634C-C902-4C23-B33E-011264D41381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACAE634C-C902-4C23-B33E-011264D41381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACAE634C-C902-4C23-B33E-011264D41381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACAE634C-C902-4C23-B33E-011264D41381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -737,6 +743,7 @@ Global
 		{34B1A79D-8FF5-4B3A-92A3-AAB09D829F26} = {EAD02045-5DD8-4929-A7FB-5621935E3F82}
 		{5085D7CF-DAD4-4CAB-869B-0AA5A4C3DD38} = {5C62B9E3-621C-4990-9D20-227176882B96}
 		{3C30A049-4206-4DA5-A1D0-40797A0AE4D6} = {5C62B9E3-621C-4990-9D20-227176882B96}
+		{ACAE634C-C902-4C23-B33E-011264D41381} = {19445D68-F5BD-47A9-81FE-AD4D30FC4B27}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
