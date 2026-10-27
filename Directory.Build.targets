@@ -1,0 +1,11 @@
+<Project>
+  <!-- macOS 沒有 .NET Framework 參考組件，透過 NuGet 取得，讓舊版 (net4.x) 專案也能載入/編譯 -->
+  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework' And '$(OS)' != 'Windows_NT'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+  <!-- x86 專案在 macOS 上無法開 x86 task host 處理 .resx，改用目前的 runtime/架構 -->
+  <PropertyGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework' And '$(OS)' != 'Windows_NT'">
+    <GenerateResourceMSBuildRuntime>CurrentRuntime</GenerateResourceMSBuildRuntime>
+    <GenerateResourceMSBuildArchitecture>CurrentArchitecture</GenerateResourceMSBuildArchitecture>
+  </PropertyGroup>
+</Project>

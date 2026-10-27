@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- 讓 WinForms (net*-windows) 專案可以在 macOS 上載入/編譯 -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+</Project>

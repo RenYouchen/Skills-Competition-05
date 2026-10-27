@@ -1,4 +1,4 @@
-namespace BrianRen_107_Q4_Data_Analyze {
+ï»¿namespace BrianRen_107_Q4_Data_Analyze {
     public partial class Form1 : Form {
         public Form1()
         {
@@ -6,12 +6,12 @@ namespace BrianRen_107_Q4_Data_Analyze {
         }
         List<string> raw = new List<string>();
 
-        private void ½YÊøToolStripMenuItem_Click(object sender, EventArgs e)
+        private void çµæŸToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void ßxÈ¡ÙYÁÏToolStripMenuItem_Click(object sender, EventArgs e)
+        private void é¸å–è³‡æ–™ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
@@ -22,14 +22,14 @@ namespace BrianRen_107_Q4_Data_Analyze {
                     string s = "";
                     for (int i = 0; i < raw.Count; i++)
                     {
-                        s += $"üI[{i + 1}]:\t{string.Join(' ', raw[i].Split().Select(int.Parse).Select(x => $"{x:F2}"))}\n";
+                        s += $"éºµ[{i + 1}]:\t{string.Join(' ', raw[i].Split().Select(int.Parse).Select(x => $"{x:F2}"))}\n";
                     }
                     richTextBox1.Text = s;
                 }
             }
         }
 
-        private void ÇóF½yÓ‹ÖµºÍ×ÔÓÉ¶ÈdfToolStripMenuItem_Click(object sender, EventArgs e)
+        private void æ±‚Fçµ±è¨ˆå€¼å’Œè‡ªç”±åº¦dfToolStripMenuItem_Click(object sender, EventArgs e)
         {
             List<List<int>> data = raw.Select(x=>x.Split(' ').Select(int.Parse).ToList()).ToList();
 
@@ -52,8 +52,8 @@ namespace BrianRen_107_Q4_Data_Analyze {
             var MSb = SSb / dfb;
             var MSw = SSw / dfw;
             var F = MSb / MSw;
-            string result = "F½yÓ‹ÖµÓ‹Ëã:\n";
-            result += $"F={F:F3}\n×ÔÓÉ¶Èdf:{dfb},{dfw}";
+            string result = "Fçµ±è¨ˆå€¼è¨ˆç®—:\n";
+            result += $"F={F:F3}\nè‡ªç”±åº¦df:{dfb},{dfw}";
             richTextBox2.Text = result;
         }
     }
