@@ -233,6 +233,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114-1_Q2_MatrixPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114-1_Q3_LCS-Unique", "BrianRen_114-1_Q3_LCS-Unique\BrianRen_114-1_Q3_LCS-Unique.csproj", "{A0277E3C-02E0-4C4D-9C6A-31A60706A4F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114-2_Q4_Word-Counter", "BrianRen_114-2_Q4_Word-Counter\BrianRen_114-2_Q4_Word-Counter.csproj", "{8F893717-DF3B-45D1-9D10-AA85DD2B34AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -639,6 +641,10 @@ Global
 		{A0277E3C-02E0-4C4D-9C6A-31A60706A4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0277E3C-02E0-4C4D-9C6A-31A60706A4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0277E3C-02E0-4C4D-9C6A-31A60706A4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F893717-DF3B-45D1-9D10-AA85DD2B34AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F893717-DF3B-45D1-9D10-AA85DD2B34AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F893717-DF3B-45D1-9D10-AA85DD2B34AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F893717-DF3B-45D1-9D10-AA85DD2B34AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -751,6 +757,7 @@ Global
 		{3C30A049-4206-4DA5-A1D0-40797A0AE4D6} = {5C62B9E3-621C-4990-9D20-227176882B96}
 		{ACAE634C-C902-4C23-B33E-011264D41381} = {19445D68-F5BD-47A9-81FE-AD4D30FC4B27}
 		{A0277E3C-02E0-4C4D-9C6A-31A60706A4F3} = {19445D68-F5BD-47A9-81FE-AD4D30FC4B27}
+		{8F893717-DF3B-45D1-9D10-AA85DD2B34AE} = {6D29CFF5-F40C-490F-AF72-92429343177C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
