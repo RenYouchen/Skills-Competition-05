@@ -1,4 +1,4 @@
-using System.Drawing.Printing;
+ï»¿using System.Drawing.Printing;
 
 namespace BrianRen_114_1_Q2_MatrixProcessingAndChangeColor {
     public partial class Form1 : Form {
@@ -35,7 +35,7 @@ namespace BrianRen_114_1_Q2_MatrixProcessingAndChangeColor {
                     cells[i, j].Click += Color_On_Click;
                     tableLayoutPanel1.Controls.Add(cells[i, j], j, i);
                 }
-            toolStripStatusLabel1.Text = "¾Í¾w";
+            toolStripStatusLabel1.Text = "å°±ç·’";
         }
 
         private void Color_On_Click(object? sender, EventArgs e)
@@ -65,10 +65,10 @@ namespace BrianRen_114_1_Q2_MatrixProcessingAndChangeColor {
             toolStripStatusLabel1.Text = msg;
         }
 
-        private void btnRotateCW(object? sender, EventArgs e) => Transform((r, c) => (c, N - 1 - r), "ÒÑí˜•rá˜ĞıŞD");
-        private void btnRotateCCW(object? sender, EventArgs e) => Transform((r, c) => (N - 1 - c, r), "ÒÑÄæ•rá˜ĞıŞD");
-        private void btnFlipH(object? sender, EventArgs e) => Transform((r, c) => (r, N - c - 1), "ÒÑË®Æ½·­ŞD");
-        private void btnFlipV(object? sender, EventArgs e) => Transform((r, c) => (N - 1 - r, c), "ÒÑ´¹Ö±·­ŞD");
+        private void btnRotateCW(object? sender, EventArgs e) => Transform((r, c) => (c, N - 1 - r), "å·²é †æ™‚é‡æ—‹è½‰");
+        private void btnRotateCCW(object? sender, EventArgs e) => Transform((r, c) => (N - 1 - c, r), "å·²é€†æ™‚é‡æ—‹è½‰");
+        private void btnFlipH(object? sender, EventArgs e) => Transform((r, c) => (r, N - c - 1), "å·²æ°´å¹³ç¿»è½‰");
+        private void btnFlipV(object? sender, EventArgs e) => Transform((r, c) => (N - 1 - r, c), "å·²å‚ç›´ç¿»è½‰");
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -80,7 +80,7 @@ namespace BrianRen_114_1_Q2_MatrixProcessingAndChangeColor {
                             Random.Shared.Next(256),
                             Random.Shared.Next(256)
                         );
-            toolStripStatusLabel1.Text = "ÒÑëS™CÌî³ä";
+            toolStripStatusLabel1.Text = "å·²éš¨æ©Ÿå¡«å……";
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace BrianRen_114_1_Q2_MatrixProcessingAndChangeColor {
                         255 - color.G,
                         255 - color.B);
                 }
-            toolStripStatusLabel1.Text = "ÒÑî†É«·´ŞD";
+            toolStripStatusLabel1.Text = "å·²é¡”è‰²åè½‰";
         }
 
         private void button7_Click(object sender, EventArgs e)

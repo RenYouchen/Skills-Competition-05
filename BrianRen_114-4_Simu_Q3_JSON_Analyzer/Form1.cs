@@ -1,4 +1,4 @@
-using System.Text;
+ï»¿using System.Text;
 using System.Text.Json;
 
 
@@ -46,11 +46,11 @@ namespace BrianRen_114_4_Simu_Q3_JSON_Analyzer {
             {
                 bool isLast = i == item.Count - 1;
                 var (label, value) = item[i];
-                sb.AppendLine(prefix + (isLast ? "©¸©¤©¤" : "©À©¤©¤") + Describe(label, value));
+                sb.AppendLine(prefix + (isLast ? "â””â”€â”€" : "â”œâ”€â”€") + Describe(label, value));
 
                 if(value.ValueKind is JsonValueKind.Array or JsonValueKind.Object)
                 {
-                    PrintChilden(value, prefix + (isLast ? "    " : "©¦   "), sb);
+                    PrintChilden(value, prefix + (isLast ? "    " : "â”‚   "), sb);
                 }
             }
         }

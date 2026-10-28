@@ -1,9 +1,9 @@
-namespace BrianRen_109_Q2_Image_Label {
+ï»¿namespace BrianRen_109_Q2_Image_Label {
     internal static class Program {
         static void Main()
         {
             var input = File.ReadAllLines("../../../LabelData.txt").Select(x=>x.Split(' '));
-            Console.WriteLine("é_Ê¼ÀLÑuˆD¿ò£¡");
+            Console.WriteLine("é–‹å§‹ç¹ªè£½åœ–æ¡†ï¼");
             foreach(var s in input)
             {
                 string filePath = s[0];
@@ -20,7 +20,7 @@ namespace BrianRen_109_Q2_Image_Label {
                     g.DrawRectangle(Pens.Red, x, y, w, h);
                 }
                 img.Save($"../../../imageOUT/{filePath}");
-                Console.WriteLine($"ÔÚ  ./{filePath} ˆD™nÖĞ¼Ó¿ò£¬ÒÔÏàÍ¬™nÃû´æÈëimageOUTÖĞ");
+                Console.WriteLine($"åœ¨  ./{filePath} åœ–æª”ä¸­åŠ æ¡†ï¼Œä»¥ç›¸åŒæª”åå­˜å…¥imageOUTä¸­");
             }
             Console.ReadKey();
         }

@@ -1,4 +1,4 @@
-namespace SImu_114_2_Q1_School_Path_Dijkstra {
+Ôªønamespace SImu_114_2_Q1_School_Path_Dijkstra {
     public partial class Form1 : Form {
         public Form1()
         {
@@ -70,7 +70,7 @@ namespace SImu_114_2_Q1_School_Path_Dijkstra {
 
             if (dist[end] == int.MaxValue)
             {
-                textBox1.Text = "üo∑®µΩﬂ_ΩK¸c";
+                textBox1.Text = "ÁÑ°Ê≥ïÂà∞ÈÅîÁµÇÈªû";
                 richTextBox2.Clear();
                 return;
             }

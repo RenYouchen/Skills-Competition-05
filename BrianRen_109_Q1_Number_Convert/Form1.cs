@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Diagnostics;
 using System.Numerics;
 
@@ -14,9 +14,9 @@ namespace BrianRen_109_Q1_Number_Convert {
         {
             numOutput.Text = BigInteger.Parse(textBox1.Text).ToString("N0");
             BigInteger num = BigInteger.Parse(textBox1.Text);
-            string[] numMap = "Áã,Ò¼,ÙE,Èş,ËÁ,Îé,ê‘,Æâ,°Æ,¾Á".Split(',');
-            string[] unit1 = ",Ê°,°Û,Çª".Split(',');
-            string[] unit2 = ",Èf,ƒ|,Õ×".Split(',');
+            string[] numMap = "é›¶,å£¹,è²³,å,è‚†,ä¼,é™¸,æŸ’,æŒ,ç–".Split(',');
+            string[] unit1 = ",æ‹¾,ä½°,ä»Ÿ".Split(',');
+            string[] unit2 = ",è¬,å„„,å…†".Split(',');
             bool needAppendZero = false;
             string ans = "";
             string raw = textBox1.Text;
@@ -44,10 +44,10 @@ namespace BrianRen_109_Q1_Number_Convert {
                 }
                 if (int.Parse(selections[i]) != 0) ans += unit2[i];
             }
-            while (ans.Contains("ÁãÁã")) ans = ans.Replace("ÁãÁã", "Áã");
-            ans = ans.Replace("Ê°Áã", "Ê°");
-            ans = ans.Trim('Áã');
-            if (num == 0) ans = "Áã";
+            while (ans.Contains("é›¶é›¶")) ans = ans.Replace("é›¶é›¶", "é›¶");
+            ans = ans.Replace("æ‹¾é›¶", "æ‹¾");
+            ans = ans.Trim('é›¶');
+            if (num == 0) ans = "é›¶";
             chineseOutput.Text = ans;
         }
 

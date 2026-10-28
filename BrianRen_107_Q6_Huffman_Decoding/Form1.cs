@@ -1,4 +1,4 @@
-namespace BrianRen_107_Q6_Huffman_Decoding {
+Ôªønamespace BrianRen_107_Q6_Huffman_Decoding {
     public partial class Form1 : Form {
         public Form1()
         {
@@ -37,14 +37,14 @@ namespace BrianRen_107_Q6_Huffman_Decoding {
         private void button3_Click(object sender, EventArgs e)
         {
             var rt = Decoder(textBox1.Text);
-            if(rt == "error") textBox2.Text = "≤ª∫œ¿Ì";
+            if(rt == "error") textBox2.Text = "‰∏çÂêàÁêÜ";
             else
             {
                 textBox2.Clear();
                 textBox3.Text = rt;
             }
             rt = Decoder(textBox4.Text);
-            if (rt == "error") textBox5.Text = "≤ª∫œ¿Ì";
+            if (rt == "error") textBox5.Text = "‰∏çÂêàÁêÜ";
             else
             {
                 textBox5.Clear();

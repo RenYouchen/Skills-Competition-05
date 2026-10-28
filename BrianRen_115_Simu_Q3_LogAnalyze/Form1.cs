@@ -1,4 +1,4 @@
-using System.Diagnostics;
+锘縰sing System.Diagnostics;
 
 namespace BrianRen_115_Simu_Q3_LogAnalyze {
     public partial class Form1 : Form {
@@ -42,7 +42,7 @@ namespace BrianRen_115_Simu_Q3_LogAnalyze {
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     textBox1.Text = ofd.FileName;
-                    textBox2.Text = "全部有效資料";
+                    textBox2.Text = "鍏ㄩ儴鏈夋晥璩囨枡";
                     //datas = File.ReadAllText(ofd.FileName)
                     //    .Split('\n', StringSplitOptions.RemoveEmptyEntries)
                     //    .Select(x => x.Split('|'))
@@ -115,7 +115,7 @@ namespace BrianRen_115_Simu_Q3_LogAnalyze {
         {
             var searchText = textBox3.Text;
             var aA = checkBox1.Checked;
-            textBox2.Text = $"搜尋 {searchText}";
+            textBox2.Text = $"鎼滃皨 {searchText}";
 
             var matchData = new List<Data>();
             if (aA)

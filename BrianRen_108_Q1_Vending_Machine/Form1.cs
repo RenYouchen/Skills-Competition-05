@@ -1,4 +1,4 @@
-using System.Diagnostics;
+锘縰sing System.Diagnostics;
 
 namespace BrianRen_108_Q1_Vending_Machine {
     public partial class Form1 : Form {
@@ -23,7 +23,7 @@ namespace BrianRen_108_Q1_Vending_Machine {
             if (cash - 35 >= 0)
             {
                 cash -= 35;
-                status.Text += "送出Cola ";
+                status.Text += "閫佸嚭Cola ";
             }
             textBox1.Text = cash.ToString("0.0");
 
@@ -35,7 +35,7 @@ namespace BrianRen_108_Q1_Vending_Machine {
             if (cash - 30 >= 0)
             {
                 cash -= 30;
-                status.Text += "送出PEPSO ";
+                status.Text += "閫佸嚭PEPSO ";
             }
             textBox1.Text = cash.ToString("0.0");
         }
@@ -46,7 +46,7 @@ namespace BrianRen_108_Q1_Vending_Machine {
             if (cash - 25 >= 0)
             {
                 cash -= 25;
-                status.Text += "送出diet PEPSO ";
+                status.Text += "閫佸嚭diet PEPSO ";
             }
             textBox1.Text = cash.ToString("0.0");
         }
@@ -57,7 +57,7 @@ namespace BrianRen_108_Q1_Vending_Machine {
             if (cash - 30 >= 0)
             {
                 cash -= 30;
-                status.Text += "送出Diet Cola ";
+                status.Text += "閫佸嚭Diet Cola ";
             }
             textBox1.Text = cash.ToString("0.0");
         }
@@ -70,7 +70,7 @@ namespace BrianRen_108_Q1_Vending_Machine {
             }
             else
             {
-                status.Text += $"退還{textBox1.Text}";
+                status.Text += $"閫�閭剓textBox1.Text}";
                 textBox1.Text = "0.0";
             }
         }

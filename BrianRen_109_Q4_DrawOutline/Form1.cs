@@ -1,4 +1,4 @@
-using System.Drawing.Drawing2D;
+ï»¿using System.Drawing.Drawing2D;
 
 namespace BrianRen_109_Q4_DrawOutline {
     public partial class Form1 : Form {
@@ -100,7 +100,7 @@ namespace BrianRen_109_Q4_DrawOutline {
                 for (int j = 0; j < ny; j++)
                 {
                     if (!covered[i, j]) continue;
-                    if (i == 0 || !covered[i - 1, j] /*×î×óß…»òÊÇ×óß…¿ÕµÄ*/) lines.Add((new Point(xs[i], ys[j]), new Point(xs[i], ys[j + 1])));//LEFT
+                    if (i == 0 || !covered[i - 1, j] /*æœ€å·¦é‚Šæˆ–æ˜¯å·¦é‚Šç©ºçš„*/) lines.Add((new Point(xs[i], ys[j]), new Point(xs[i], ys[j + 1])));//LEFT
                     if (i == nx-1 || !covered[i + 1, j]) lines.Add((new Point(xs[i+1], ys[j]), new Point(xs[i + 1], ys[j + 1])));//RIGHT
                     if (j == 0 || !covered[i, j - 1]) lines.Add((new Point(xs[i], ys[j]), new Point(xs[i + 1], ys[j])));//TOP
                     if (j == ny-1 || !covered[i, j + 1]) lines.Add((new Point(xs[i], ys[j + 1]), new Point(xs[i+1], ys[j + 1])));//BOTTOM

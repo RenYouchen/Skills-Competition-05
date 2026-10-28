@@ -1,4 +1,4 @@
-namespace Simu_114_1_Q1_Postfix_And_Prefix_Calc {
+ï»¿namespace Simu_114_1_Q1_Postfix_And_Prefix_Calc {
     public partial class Form1 : Form {
         public Form1()
         {
@@ -29,7 +29,7 @@ namespace Simu_114_1_Q1_Postfix_And_Prefix_Calc {
                 textBox3.Text = string.Join(Environment.NewLine, steps);
             } catch(Exception _)
             {
-                MessageBox.Show("±íß_Ê½åeÕ`");
+                MessageBox.Show("è¡¨é”å¼éŒ¯èª¤");
             }
             
         }
@@ -68,7 +68,7 @@ namespace Simu_114_1_Q1_Postfix_And_Prefix_Calc {
                     {
                         calcStack.Push(lop / rop);
                     }
-                    string result = i == data.Last().ToString() ? "½Y¹û" : $"push\t[{string.Join(',', calcStack)}]";
+                    string result = i == data.Last().ToString() ? "çµæœ" : $"push\t[{string.Join(',', calcStack)}]";
                     steps.Add($"[{count++}] {lop} {i} {rop} = {calcStack.Peek()} --> {result}");
 
                 }
@@ -110,7 +110,7 @@ namespace Simu_114_1_Q1_Postfix_And_Prefix_Calc {
                         {
                             calcStack.Push(lop / rop);
                         }
-                        string result = idx == data.Count() - 1 ? "½Y¹û" : $"push\t[{string.Join(',', calcStack)}]";
+                        string result = idx == data.Count() - 1 ? "çµæœ" : $"push\t[{string.Join(',', calcStack)}]";
                         steps.Add($"[{count++}] {lop} {i} {rop} = {calcStack.Peek()} --> {result}");
 
                     }

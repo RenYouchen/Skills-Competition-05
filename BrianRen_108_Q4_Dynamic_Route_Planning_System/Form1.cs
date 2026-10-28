@@ -1,4 +1,4 @@
-using System.Diagnostics;
+ï»¿using System.Diagnostics;
 
 namespace BrianRen_108_Q4_Dynamic_Route_Planning_System {
     public partial class Form1 : Form {
@@ -16,7 +16,7 @@ namespace BrianRen_108_Q4_Dynamic_Route_Planning_System {
             
             //for (int i = 0; i < 11; i++)
             //    for (int j = 0; j < 11; j++) map[i, j] = false;
-            map = new bool[11, 11]; //Ö±½Ó³õÊ¼»¯
+            map = new bool[11, 11]; //ç›´æŽ¥åˆå§‹åŒ–
             draw = true;
             var cells = Enumerable.Range(0, 11 * 11)
                 .Select(x => (x / 11, x % 11))
@@ -49,11 +49,11 @@ namespace BrianRen_108_Q4_Dynamic_Route_Planning_System {
         {
             Graphics g = e.Graphics;
             g.FillEllipse(Brushes.Black, 0, 0, 30, 30);
-            g.DrawString("Â·ÕÏücO", DefaultFont, Brushes.Black, 30, 0);
+            g.DrawString("è·¯éšœé»žO", DefaultFont, Brushes.Black, 30, 0);
             g.DrawEllipse(new Pen(Color.Blue, 3), 0, 35, 30, 30);
-            g.DrawString("ÆðücS", DefaultFont, Brushes.Black, 30, 35);
+            g.DrawString("èµ·é»žS", DefaultFont, Brushes.Black, 30, 35);
             g.DrawRectangle(new Pen(Color.Red, 3), 0, 70, 30, 30);
-            g.DrawString("½KücT", DefaultFont, Brushes.Black, 30, 70);
+            g.DrawString("çµ‚é»žT", DefaultFont, Brushes.Black, 30, 70);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
