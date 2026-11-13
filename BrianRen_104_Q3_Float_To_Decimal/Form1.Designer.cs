@@ -58,6 +58,7 @@
             // textBox1
             // 
             textBox1.Location = new Point(278, 6);
+            textBox1.MaxLength = 1;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(47, 50);
             textBox1.TabIndex = 2;
@@ -65,6 +66,7 @@
             // textBox2
             // 
             textBox2.Location = new Point(331, 6);
+            textBox2.MaxLength = 8;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(241, 50);
             textBox2.TabIndex = 3;
@@ -72,6 +74,7 @@
             // textBox3
             // 
             textBox3.Location = new Point(578, 4);
+            textBox3.MaxLength = 23;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(579, 50);
             textBox3.TabIndex = 4;
@@ -91,6 +94,7 @@
             button1.TabIndex = 6;
             button1.Text = "Random";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -100,6 +104,7 @@
             button2.TabIndex = 7;
             button2.Text = "Convert";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -125,7 +130,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Form1";
             Text = "IEEE超127單精確度浮點二進制轉換爲十進制實數值系統";
             ResumeLayout(false);
