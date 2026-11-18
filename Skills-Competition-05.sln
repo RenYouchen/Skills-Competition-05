@@ -349,6 +349,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_102_Q4_Picture_Inf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_102_Q5_Calc", "BrianRen_102_Q5_Calc\BrianRen_102_Q5_Calc.csproj", "{50AABDDC-AC12-4C82-93D3-25366FC1670C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_102_Q6_Matrix_Chain_DP", "BrianRen_102_Q6_Matrix_Chain_DP\BrianRen_102_Q6_Matrix_Chain_DP.csproj", "{9A1A01F3-DAF2-4D13-B467-5A71346A3411}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -931,6 +933,10 @@ Global
 		{50AABDDC-AC12-4C82-93D3-25366FC1670C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50AABDDC-AC12-4C82-93D3-25366FC1670C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50AABDDC-AC12-4C82-93D3-25366FC1670C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1A01F3-DAF2-4D13-B467-5A71346A3411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1A01F3-DAF2-4D13-B467-5A71346A3411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1A01F3-DAF2-4D13-B467-5A71346A3411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1A01F3-DAF2-4D13-B467-5A71346A3411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1099,6 +1105,7 @@ Global
 		{50C5449B-BD78-4119-B3AE-A87946681FAF} = {4F9A5C95-D2F1-44AE-B766-50AA67A0FF15}
 		{33EC34F9-1B21-45F2-84E1-875FE059AA77} = {4F9A5C95-D2F1-44AE-B766-50AA67A0FF15}
 		{50AABDDC-AC12-4C82-93D3-25366FC1670C} = {4F9A5C95-D2F1-44AE-B766-50AA67A0FF15}
+		{9A1A01F3-DAF2-4D13-B467-5A71346A3411} = {4F9A5C95-D2F1-44AE-B766-50AA67A0FF15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
