@@ -369,6 +369,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_095_Q3_Draw_Sin_An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_095_Q5_Trash_Clean_Cost_0809", "BrianRen_095_Q5_Trash_Clean_Cost\BrianRen_095_Q5_Trash_Clean_Cost_0809.csproj", "{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_104_北軟_P4_Img_Quality", "BrianRen_104_北軟_P4_Img_Quality\BrianRen_104_北軟_P4_Img_Quality.csproj", "{C8B6025B-A97E-4A69-BF4C-1A0DB07E45BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -987,6 +989,10 @@ Global
 		{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B6025B-A97E-4A69-BF4C-1A0DB07E45BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B6025B-A97E-4A69-BF4C-1A0DB07E45BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B6025B-A97E-4A69-BF4C-1A0DB07E45BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B6025B-A97E-4A69-BF4C-1A0DB07E45BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1165,6 +1171,7 @@ Global
 		{99D23230-3711-4708-B493-3EEF53AB856F} = {0FB6342E-F627-4EBA-8D96-84D8B28CC31D}
 		{EF88AB04-1CD8-48F6-9D21-D6AFB8C6F3B4} = {99D23230-3711-4708-B493-3EEF53AB856F}
 		{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501} = {99D23230-3711-4708-B493-3EEF53AB856F}
+		{C8B6025B-A97E-4A69-BF4C-1A0DB07E45BB} = {99D23230-3711-4708-B493-3EEF53AB856F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}

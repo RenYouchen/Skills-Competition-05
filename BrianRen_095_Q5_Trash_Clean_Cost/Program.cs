@@ -35,4 +35,8 @@ while((s = Console.ReadLine()) != null)
     {
         Console.WriteLine((a[0] + a[1]) / 2 * 5);
     }
+
 }
+
+
+Console.ReadKey();
