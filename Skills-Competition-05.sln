@@ -367,6 +367,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20261121 模擬賽", "20261
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_095_Q3_Draw_Sin_And_Cos_0740", "BrianRen_095_Q3_Draw_Sin_And_Cos\BrianRen_095_Q3_Draw_Sin_And_Cos_0740.csproj", "{EF88AB04-1CD8-48F6-9D21-D6AFB8C6F3B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_095_Q5_Trash_Clean_Cost_0809", "BrianRen_095_Q5_Trash_Clean_Cost\BrianRen_095_Q5_Trash_Clean_Cost_0809.csproj", "{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -981,6 +983,10 @@ Global
 		{EF88AB04-1CD8-48F6-9D21-D6AFB8C6F3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF88AB04-1CD8-48F6-9D21-D6AFB8C6F3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF88AB04-1CD8-48F6-9D21-D6AFB8C6F3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1158,6 +1164,7 @@ Global
 		{4C21203D-FF31-4332-B8A5-994B8226EB08} = {EAD02045-5DD8-4929-A7FB-5621935E3F82}
 		{99D23230-3711-4708-B493-3EEF53AB856F} = {0FB6342E-F627-4EBA-8D96-84D8B28CC31D}
 		{EF88AB04-1CD8-48F6-9D21-D6AFB8C6F3B4} = {99D23230-3711-4708-B493-3EEF53AB856F}
+		{E78B8AD4-7E78-4748-A7CC-2EFEDCDA1501} = {99D23230-3711-4708-B493-3EEF53AB856F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
