@@ -71,7 +71,6 @@ void HorFlip()
     for (int j = 0; j < m; j++)
         a[i, j] = grid[i, max-j-1];
     grid = a;
-
 }
 
 for (int i = 0; i < max; i++)
