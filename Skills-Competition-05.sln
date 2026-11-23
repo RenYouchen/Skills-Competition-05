@@ -383,6 +383,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_101_Q5_8-Puzzle", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_114-2_Q3_Image_Processing", "BrianRen_114-2_Q3_Image_Processing\BrianRen_114-2_Q3_Image_Processing.csproj", "{4D758C31-F0FE-447C-A21E-0AB28D84A612}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianRen_097_Q1_Sinc_Draw", "BrianRen_097_Q1_Sinc_Draw\BrianRen_097_Q1_Sinc_Draw.csproj", "{5C7203C4-B609-48CC-B735-D0C0EBE11B70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1025,6 +1027,10 @@ Global
 		{4D758C31-F0FE-447C-A21E-0AB28D84A612}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D758C31-F0FE-447C-A21E-0AB28D84A612}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D758C31-F0FE-447C-A21E-0AB28D84A612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7203C4-B609-48CC-B735-D0C0EBE11B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7203C4-B609-48CC-B735-D0C0EBE11B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7203C4-B609-48CC-B735-D0C0EBE11B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7203C4-B609-48CC-B735-D0C0EBE11B70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1210,6 +1216,7 @@ Global
 		{9B1D34EA-948D-4010-AFA3-A503D9257E3A} = {0FB6342E-F627-4EBA-8D96-84D8B28CC31D}
 		{58429D62-1192-4167-B201-7B36E5E598F7} = {9B1D34EA-948D-4010-AFA3-A503D9257E3A}
 		{4D758C31-F0FE-447C-A21E-0AB28D84A612} = {9B1D34EA-948D-4010-AFA3-A503D9257E3A}
+		{5C7203C4-B609-48CC-B735-D0C0EBE11B70} = {9B1D34EA-948D-4010-AFA3-A503D9257E3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4E9A451-B28A-4494-A008-7078FC7C7BD2}
