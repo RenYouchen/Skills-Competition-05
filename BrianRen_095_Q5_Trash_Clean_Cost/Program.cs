@@ -2,17 +2,17 @@
 string s;
 while((s = Console.ReadLine()) != null)
 {
-    var a = s.Split().Select(int.Parse).ToList();
+    var a = s.Split().Select(double.Parse).ToList();
     var water = a[0] switch
     {
-        <= 50 => 1,
-        > 50 and <= 100 => 2,
+        < 50 => 1,
+        >= 50 and <= 100 => 2,
         > 100 => 3
     };
     var elect = a[1] switch
     {
-        <= 100 => 1,
-        > 100 and <= 200 => 2,
+        < 100 => 1,
+        >= 100 and <= 200 => 2,
         > 200 => 3
     };
     if (water == 1 && elect == 1)
@@ -33,7 +33,7 @@ while((s = Console.ReadLine()) != null)
     }
     else
     {
-        Console.WriteLine((a[0] + a[1]) / 2 * 5);
+        Console.WriteLine(Math.Round((a[0] + a[1]) / 2 * 5, 0));
     }
 
 }

@@ -26,12 +26,12 @@ namespace BrianRen_095_Q3_Draw_Sin_And_Cos {
             g.DrawLine(Pens.Red, 0, x, panel1.Width, x);
             g.DrawLine(Pens.Red, 1, 1, 1, panel1.Height);
 
-            for (int i = 0; i < 52; i++)
+            for (int i = 0; i < 52/2; i++)
             {
                 if(selectSin)
-                points.Add(new PointF(i * 10, (float)Math.Sin(i * Math.PI / 25.5) * x + x));
+                    points.Add(new PointF(i * 10, (float)Math.Sin(i * Math.PI / -25.5) * x + x));
                 else
-                    points.Add(new PointF(i * 10, (float)Math.Cos(i * Math.PI / 25.5) * x + x));
+                    points.Add(new PointF(i * 10, ((float)Math.Tan(i * Math.PI / -25.5) * x + x)));
 
             }
             g.DrawLines(Pens.Black, points.ToArray());
