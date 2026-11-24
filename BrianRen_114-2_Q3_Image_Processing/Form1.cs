@@ -58,7 +58,7 @@ namespace BrianRen_114_2_Q3_Image_Processing {
         private void button4_Click(object sender, EventArgs e)
         {
             if (pictureBox2.Image == null) return;
-            Bitmap bmp = (Bitmap)pictureBox2.Image;
+            Bitmap bmp = (Bitmap)pictureBox1.Image;
             int h = bmp.Height, w = bmp.Width;
             Bitmap nBmp = new Bitmap(w, h);
 
@@ -69,15 +69,15 @@ namespace BrianRen_114_2_Q3_Image_Processing {
                 for (int j = 0; j < w; j++)
                 {
                     var color = bmp.GetPixel(j, i);
-                    int r = color.R, g = color.G, b = color.B;
-                    double l = Math.Min(255, (0.299 * r) + (0.587 * g) + (0.114 * b));
+                    byte r = color.R, g = color.G, b = color.B;
+                    double l = (0.299 * r) + (0.587 * g) + (0.114 * b);
                     min = Math.Min(min, l);
                     max = Math.Max(max, l);
                 }
             }
 
-            label4.Text = max.ToString();
-            label3.Text = min.ToString();
+            label4.Text = max.ToString("F3");
+            label3.Text = min.ToString("F3");
 
             for (int i = 0; i < h; i++)
             {
@@ -86,6 +86,7 @@ namespace BrianRen_114_2_Q3_Image_Processing {
                     var color = bmp.GetPixel(j, i);
                     int l = color.R;
                     int G = Math.Min(255, (int)((l - min) / (max - min) * 255));
+                    G = Math.Max(0, G);
                     nBmp.SetPixel(j, i, Color.FromArgb(G,G,G));
                 }
             }
